@@ -185,77 +185,7 @@
 
     <script type="text/javascript"> 
 
-          var yPosition,y; // save original y position of element here
-setInterval(function(){if(screen.width<766)
-          {
-                 document.getElementById("fo").style.marginLeft="0px";
-                  document.getElementById("ban").innerHTML=" ";
-          }
-           else
-               {
-                document.getElementById("fo").style.marginLeft="17%";  
-                document.getElementById("ban").innerHTML="<p></p><p></p><p></p><p></p><p></p>";
-
-                }},100);
-
-
-          window.onload = function(){ // once entire page is loaded this function is fired
-              // save original y position of element before it is scrolled
-              yPosition = document.getElementById("na").offsetTop;
-             var bo = document.getElementById("he").offsetHeight;
-              var yy= document.getElementById("he").offsetTop;
-              y=bo+yy;
-              if(screen.width<766)
-              {
-                 document.getElementById("fo").style.marginLeft="0px";
-                 document.getElementById("ban").innerHTML=" ";
-
-               }
-               else
-               {
-                document.getElementById("fo").style.marginLeft="17%";
-                 document.getElementById("ban").innerHTML="<p></p><p></p><p></p><p></p><p></p>";
-
-              }
-              
-               }
-
-          window.onscroll = function(){ // scrolling fires this function   
-if(screen.width<766)
-          {
-                 document.getElementById("fo").style.marginLeft="0px";
-                  document.getElementById("ban").innerHTML=" ";
-          }
-           else
-               {
-                document.getElementById("fo").style.marginLeft="17%";  
-                document.getElementById("ban").innerHTML="<p></p><p></p><p></p><p></p><p></p>";
-
-                }   
-
-              var myElement = document.getElementById("na"); // for cleaner code
-
-                  // compare original y position of element to y position of page
-                  if( yPosition <= window.pageYOffset ){ 
-
-                  // snap element to the top by changing css values of element
-                  myElement.style.position = "fixed";
-                  myElement.style.top = "0px"; 
-                  document.getElementById("sl").style.top="50px";
-                  document.getElementById("sl").style.position="fixed";
-
-              }
-                else if(y>=window.pageYOffset-45){         
-
-                  // re-position to original flow of content
-                  var x=100+window.pageYOffset;
-                  myElement.style.top = "150px"; // set to default   
-                  myElement.style.position ="static"; 
-                  document.getElementById("sl").style.top="160px";
-                  document.getElementById("sl").style.position="static";
-   
-              }                  
-          }      
+     
 
 
 function sf(s)
@@ -332,62 +262,7 @@ document.getElementById("ar").style="display:none;";
 document.getElementById("cs").style="display:block;";
 
 
-}
-else if(s=="s2"){
- 
-document.getElementById("sf").style="display:block;";
-document.getElementById("ma").style="display:none;";
-document.getElementById("im").style="display:none;";
-document.getElementById("ar").style="display:none;";
-document.getElementById("cs").style="display:none;";
-}else if(s=="m2"){
- 
-document.getElementById("sf").style="display:none;";
-
-document.getElementById("ma").style="display:block;";
-document.getElementById("im").style="display:none;";
-document.getElementById("ar").style="display:none;";
-document.getElementById("cs").style="display:none;";
-}
-else if(s=="i2"){
-  
-
-document.getElementById("sf").style="display:none;";
-
-document.getElementById("ma").style="display:none;";
-document.getElementById("im").style="display:block;";
-document.getElementById("ar").style="display:none;";
-document.getElementById("cs").style="display:none;";
-
-}
-else if(s=="an2"){
- 
-
-document.getElementById("sf").style="display:none;";
-
-document.getElementById("ma").style="display:none;";
-document.getElementById("im").style="display:none;";
-document.getElementById("ar").style="display:block;";
-document.getElementById("cs").style="display:none;";
-
-
-}
-else if(s=="c2"){
-
-
-document.getElementById("sf").style="display:none;";
-
-document.getElementById("ma").style="display:none;";
-document.getElementById("im").style="display:none;";
-document.getElementById("ar").style="display:none;";
-document.getElementById("cs").style="display:block;";
-
-
-}
- // var t=document.getElementById("sf");
- // t.parentNode.scrollTop=t.offsetTop;
-//window.location.hash = '#sf';
-}
+}}
 
 
 </script>
@@ -414,7 +289,7 @@ document.getElementById("cs").style="display:block;";
    
 </div>
 
-<br>
+
 
 
     
@@ -447,17 +322,22 @@ function closeNav() {
 
 
                                                  <div id="sii" style=" background-color: ;">
-                                                          <div id="sidebar"  style=" background-color: #0B0B61;opacity:0.7;width:17%;border-right: 4px solid #ff6600;">
+                                                          <div id="sidebar"  class="col-sm-offset-10" style=" background-color: #0B0B61;opacity:0.7;width:17%;border-left: 4px solid #ff6600;">
                                                                     
                                                                                  <div ui-sref="app.dashboard" class="item" href="/">
                                                                                       <br><br>
-                                                                                      <marquee scrollamount=""><label align="center" style="color:white;">W e l c o m e &nbsp;&nbsp;t o &nbsp;&nbsp;p o r t a l &nbsp;&nbsp; of &nbsp;&nbsp;  s t u d e n t &nbsp;&nbsp;  w e l f a r e &nbsp;&nbsp;  O f f i c e</label></marquee>
+                                                                                      <marquee scrollamount=""><label align="center" style="color:white;">N o w &nbsp;&nbsp;y o u &nbsp;&nbsp;a r e &nbsp;&nbsp; b e c o m i n g&nbsp;&nbsp;  p u b l i c  &nbsp;&nbsp;  r e p o r t e r&nbsp;&nbsp; </label></marquee>
                                                                                       <br><br>
                                                                                   </div>
                                                     <a href="#hes" style="text-decoration:none;color: inherit;">
                                                                 
                                                                                   <div ui-sref-active="active" ui-sref="app.dashboard" class="item active" href="/" color="white">
-                                                                                <font size="4" >     kljdkasd</font>
+                                                                                <font size="4" >Helpingo Home</font>
+                                                                                  </div></a>
+                                                                                  <a href="#hes" style="text-decoration:none;color: inherit;">
+                                                                
+                                                                                  <div ui-sref-active="active" ui-sref="app.dashboard" class="item active" href="/" color="white">
+                                                                                <font size="4" >login/signup</font>
                                                                                   </div></a>
 
                                                                  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>

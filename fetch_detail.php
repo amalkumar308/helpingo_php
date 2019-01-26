@@ -12,16 +12,20 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
     
     $con = con();
     
-    echo $value;
 
 if($value=="1")
 {
     $query = "SELECT city_name FROM city";
      $resultArray = $con->query($query);
-
-     $JSON=json_encode($resultArray);
-
-     echo $JSON;
+ 
+ $row[]=array();
+  while($row = $resultArray ->fetch_array();)
+                           {
+                            echo $row;
+                           }
+                           
+    
+    // echo $JSON;
 }
 else if($value=="2")
 {
