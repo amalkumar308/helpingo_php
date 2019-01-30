@@ -18,7 +18,7 @@ JAVA (for system software)
 Raspberry Pi (For collaborating on our own server)
 This Application uses REST APIs developed in php to connect/fetch/insert data to mySql DB. Both the REST APIs and mySQL DB (phpmyadmin panel) is accessed through raspberry pie server.
 
-REST APIs developed are stored at: https://github.com/amalkumar308/helpingo_php
+Android App are stored at: https://github.com/harneet-9039/Helpingo
 
 A stand alone JAVA Application is also being developed to access the notifications sent through android application in realtime.
 
